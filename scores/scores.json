@@ -1,0 +1,41 @@
+{
+  "idToTestNameHash": {
+    "FrScTe1": "From Scratch Tests GET /api/to-dos sees all \"to dos\"",
+    "FrScTe2": "From Scratch Tests GET /api/to-dos serves empty array if no \"to dos\"",
+    "FrScTe3": "From Scratch Tests GET /api/to-dos/:id sees a single \"to dos\"",
+    "FrScTe4": "From Scratch Tests GET /api/to-dos/:id 404s if there is no \"to do\"",
+    "FrScTe5": "From Scratch Tests POST /api/to-dos creates a \"to do\"",
+    "FrScTe6": "From Scratch Tests PATCH /api/to-dos/:id updates a \"to do\"",
+    "FrScTe7": "From Scratch Tests PATCH /api/to-dos/:id returns 404 if a \"to do\" does not exist",
+    "FrScTe8": "From Scratch Tests DELETE /api/to-dos/:id deletes an existing \"to do\"",
+    "FrScTe9": "From Scratch Tests DELETE /api/to-dos/:id returns 404 if a \"to do\" does not exist"
+  },
+  "testNameToIdHash": {
+    "From Scratch Tests GET /api/to-dos serves empty array if no \"to dos\"": "FrScTe2",
+    "From Scratch Tests GET /api/to-dos sees all \"to dos\"": "FrScTe1",
+    "From Scratch Tests GET /api/to-dos/:id sees a single \"to dos\"": "FrScTe3",
+    "From Scratch Tests GET /api/to-dos/:id 404s if there is no \"to do\"": "FrScTe4",
+    "From Scratch Tests POST /api/to-dos creates a \"to do\"": "FrScTe5",
+    "From Scratch Tests PATCH /api/to-dos/:id updates a \"to do\"": "FrScTe6",
+    "From Scratch Tests PATCH /api/to-dos/:id returns 404 if a \"to do\" does not exist": "FrScTe7",
+    "From Scratch Tests DELETE /api/to-dos/:id deletes an existing \"to do\"": "FrScTe8",
+    "From Scratch Tests DELETE /api/to-dos/:id returns 404 if a \"to do\" does not exist": "FrScTe9"
+  },
+  "testScores": {
+    "From Scratch Tests": {
+      "FrScTe1": 0,
+      "FrScTe2": 0,
+      "FrScTe3": 0,
+      "FrScTe4": 0,
+      "FrScTe5": 0,
+      "FrScTe6": 0,
+      "FrScTe7": 0,
+      "FrScTe8": 0,
+      "FrScTe9": 0
+    }
+  },
+  "humanReadable": {
+    "From Scratch Tests": "0/9",
+    "finalTestScore": "FINAL SCORE: 0/9"
+  }
+}

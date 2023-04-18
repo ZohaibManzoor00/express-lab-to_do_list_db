@@ -1,0 +1,11 @@
+#!/bin/sh
+
+npm run test
+
+git add scores/scores.json
+
+# What's this file?
+# It's called a "git hook" and it "hooks" into certain git actions
+# In this case, it's a pre-commit hook, which runs before you commit
+# And we're using it to run the test command, which will ensure the test suite
+# scores have been calculated

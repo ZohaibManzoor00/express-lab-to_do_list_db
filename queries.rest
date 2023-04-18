@@ -1,0 +1,39 @@
+# If you're using VSCode, you can install "REST Client" and use the following queries on your API without ever leaving your IDE!
+
+GET http://localhost:8080/api/to-dos
+
+
+##################################
+
+GET http://localhost:8080/api/to-dos/24
+
+
+##################################
+
+
+POST http://localhost:8080/api/to-dos
+Content-Type: application/json
+
+{
+  "title": "Create something correctly"
+}
+
+
+##################################
+
+PATCH http://localhost:8080/api/to-dos/2
+Content-Type: application/json
+
+{
+  "isDone": true
+}
+
+
+##################################
+
+DELETE http://localhost:8080/api/to-dos
+
+
+##################################
+
+DELETE http://localhost:8080/api/to-dos/21

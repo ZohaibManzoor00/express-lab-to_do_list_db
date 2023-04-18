@@ -1,0 +1,158 @@
+:root {
+  --marcyBlack: #261F1D;
+  --marcyWhite: #FFFCF7;
+  --marcyDarkGray: #B3BBB0;
+  --marcyGreen: #327A5F;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0 0 1rem;
+  background: var(--marcyBlack);
+  color: var(--marcyWhite);
+  padding: 1rem 1.5rem;
+  border-bottom: 0.3rem solid var(--marcyGreen);
+}
+
+form {
+  margin: 0 auto;
+  width: fit-content;
+  display: block;
+  font-size: 1.1rem;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+#submit-button {
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1.1rem;
+  width: fit-content;
+}
+
+label {
+  font-size: 1.5rem;
+  display: block;
+  font-weight: 300;
+}
+
+ul {
+  list-style: none;
+  width: 100%;
+  max-width: 30rem;
+  margin: 1rem auto;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  flex: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: var(--marcyGreen);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.2rem solid var(--marcyBlack);
+  border-radius: 0.2rem;
+  transform: translateY(-0.075rem);
+  display: grid;
+  place-content: center;
+  margin: 0.25rem 0.5rem 0 0;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.9rem;
+  height: 0.9rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--marcyGreen);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+h2 {
+  margin: 0;
+  text-align: center;
+}
+
+button {
+  background-color: var(--marcyBlack);
+  color: var(--marcyWhite);
+  border: none;
+  width: 5rem;
+  flex: none;
+  padding: .5rem .25rem;
+  font-size: .75rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0;
+  transition: all .2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--marcyDarkGray);
+  color: #000
+}
+
+button:focus {
+  background-color: var(--marcyDarkGray);
+  color: #000
+}
+
+button:active {
+  background-color: var(--marcyGreen);
+  color: var(--marcyWhite);
+}
+
+/* Util Classes */
+.flex-end {
+  margin-left: auto;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.basic-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0.5rem;
+}
